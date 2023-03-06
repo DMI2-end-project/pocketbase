@@ -9,6 +9,7 @@
     "serve": "cd pocketbase && ./pocketbase serve"
   },
   "devDependencies": {
+    "@vite-pwa/nuxt": "^0.0.6",
     "nuxt": "^3.2.3"
   },
   "dependencies": {
