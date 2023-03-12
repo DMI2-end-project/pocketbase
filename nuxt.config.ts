@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   modules: [
     '@vite-pwa/nuxt'
   ],
+  nitro: {
+    prerender: {
+      routes: ['/dev-sw.js?dev-sw']
+    }
+  },
   pwa: {
     // registerType: 'autoUpdate',
     manifest: {
@@ -69,7 +74,8 @@ export default defineNuxtConfig({
       ],
     },
     workbox: {
-      navigateFallback: '/',
+      // navigateFallback: '/',
+      globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
     },
     devOptions: {
       enabled: true,
