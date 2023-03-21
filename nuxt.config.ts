@@ -13,10 +13,10 @@ export default defineNuxtConfig({
         },
       },
     },
-  }
+  },
   nitro: {
     prerender: {
-      routes: ['/dev-sw.js?dev-sw']
+      // routes: ['/dev-sw.js?dev-sw']
     }
   },
   pwa: {
